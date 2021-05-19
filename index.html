@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1025px;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+        #grid-galerija {
+            padding: 10px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(2, 100px);
+            grid-row-gap: 70px;
+            grid-column-gap: 40px;
+        }
+
+        .box {
+            background-image: url(placeholder-image.png);
+            background-color: rgb(65, 130, 252);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10%;
+            min-height: 40px;
+            min-width: 40px;
+            align-content: space-around;
+        }
+
+        .box .title {
+            background: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 15px;
+            margin-top: 83%;
+            margin-bottom: 0%;
+        }
+
+        h1 {
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #grid-galerija {
+                grid-template-columns: repeat(5, 100px);
+                grid-template-rows: repeat(2, 100px);
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #grid-galerija {
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: repeat(4, 100px);
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            #grid-galerija {
+                grid-template-columns: repeat(1, 100px);
+            }
+
+            p {
+                font-size: 0.6em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="grid-galerija">
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="title">Image Title</div>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ratione facilis quasi, nesciunt quidem, dolorem
+        aspernatur magnam laborum culpa voluptatum veritatis itaque deserunt distinctio error et aperiam accusantium
+        delectus expedita!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo labore doloremque dignissimos nobis est sed
+        inventore sint fugit, nihil debitis. Dolores, nihil earum explicabo modi iste amet impedit laboriosam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, quis impedit saepe ipsa aliquid reiciendis rem
+        fuga minima pariatur facere magnam veniam dolorum sed cum sapiente corporis, hic, architecto quo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tenetur voluptas, nihil repellat adipisci deleniti
+        enim doloribus? Ut nihil ea tenetur repudiandae culpa accusamus cumque maxime, illo officia doloremque expedita.
+    </p>
+</body>
+
+</html>
